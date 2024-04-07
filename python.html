@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="python.css">
+</head>
+<body>
+    
+<div id="menu">
+    <div class="logo">
+        <h1>PYTHON</h1>
+        <img src="python.png" alt="" width="100">
+    </div>
+    <p>
+        <ul>
+            <li>Input Username</li>
+            <li>Click Play</li>
+            <li>WASD / Arrow Keys To change directions</li>
+            <li>Rewind / King Crimson Ability is  activated when clicking the King Crimson button or press SPACE</li>
+            <li>You can rewind 5 seconds before using the slider and Click the Activate button</li>
+            <li>Click Cancel to cancel the Rewind</li>
+            <li>The Rewind Time tells the amount of rewind time you have</li>
+            <li>You can see where the Rewind positions is by clicking the Rewind Path checkbox</li>
+            <li>The Food generates every 3 second</li>
+        </ul>
+    </p>
+    
+        <input type="text" id="username">
+        <button id="play" disabled>Start Game</button>
+
+</div>
+<div id="game">
+
+    <div class="game-top">
+        <div class="score">
+           <p> Score : <span id="score">0</span> </p>
+        </div>
+        <div class="logo">
+            <h1>PYTHON</h1>
+            <img src="python.png" width="100" alt="">
+        </div>
+        <div class="time">
+          <p> Time : <span id="time">00:00:00</span> </p> 
+        </div>
+    </div>
+
+    <div class="gameboard">
+        <canvas id="snake" width="960" height="600"></canvas>
+    </div>
+
+    <div class="controls">
+        <input type="range" min="0" max="5" id="slider" value="5">
+        <button id="rewind" onclick="btnClicked()">KING CRIMSON</button>
+        <button id="activate" onclick="activateKingCrimson()">Activate</button>
+        <button id="cancel" onclick="cancelKingCrimson()">Cancel</button>
+    </div>
+    <h3 style="margin:10px ">Rewind Time</h3>
+    <div id="rewind-progress">
+        <div id="rewind-progress-bar"></div>
+    </div>
+    <br>
+    <label for="">Rewind Path</label>
+    <input type="checkbox" name="path" id="path">
+
+</div>
+
+
+    <script src="python.js"></script>
+</body>
+</html>

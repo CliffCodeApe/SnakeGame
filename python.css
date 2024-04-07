@@ -1,0 +1,119 @@
+#game{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo h1{
+    margin-right: 10px;
+}
+
+.game-top{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.game-top p{
+    font-size: 20px;
+}
+
+.controls{
+    display: flex;
+}
+
+#menu{
+    font-family: fantasy;
+    display: block;
+    margin: 30vh auto;
+    width: 960px;
+    padding: 10px;
+    background-color: rgb(17, 135, 231);
+    color: white;
+}
+
+#menu #start{
+    border: none;
+    padding: 10px;
+}
+
+#menu h1{
+    text-align: center;
+}
+
+button{
+    margin: 20px 10px;
+}
+
+#rewind{
+    padding: 10px;
+    font-size: 20px;
+}
+
+#activate{
+    padding: 10px;
+    font-size: 20px;
+    display: none;
+}
+
+#cancel{
+    padding: 10px;
+    font-size: 20px;
+    display: none;
+}
+
+#slider{
+    display: none;
+}
+
+#rewind-progress{
+    border: 1px solid;
+    border-radius: 70px;
+    height: 30px;
+    /* max-width: 300px; */
+    width: 300px;
+    position: relative;
+}
+
+#rewind-progress-bar{
+    position: absolute;
+    height: 30px;
+    border-radius: 70px;
+    background-color: yellow;
+
+}
+
+.w0{
+    width: 0;
+}
+
+.w1{
+    width: 60px;
+}
+
+.w2{
+    width: 120px;
+}
+
+.w3{
+    width: 180;
+}
+
+.w4{
+    width: 240;
+}
+
+.w5{
+    width: 300px;
+}
+
+
